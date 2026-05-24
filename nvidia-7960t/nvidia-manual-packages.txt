@@ -1,0 +1,8 @@
+libnvidia-cfg1
+libnvidia-compute
+nvidia-container-toolkit
+nvidia-dkms-open
+nvidia-firmware
+nvidia-kernel-common
+nvidia-modprobe
+nvidia-settings

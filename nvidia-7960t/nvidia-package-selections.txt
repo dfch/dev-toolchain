@@ -1,0 +1,17 @@
+libnvidia-cfg1:amd64				install
+libnvidia-compute:amd64				install
+libnvidia-container-tools			install
+libnvidia-container1:amd64			install
+libnvidia-decode:amd64				install
+libnvidia-gpucomp:amd64				install
+nvidia-container-toolkit			install
+nvidia-container-toolkit-base			install
+nvidia-dkms-open				install
+nvidia-firmware					install
+nvidia-kernel-common				install
+nvidia-kernel-common-580			deinstall
+nvidia-kernel-source-open			install
+nvidia-modprobe					install
+nvidia-persistenced				install
+nvidia-prime					deinstall
+nvidia-settings					install

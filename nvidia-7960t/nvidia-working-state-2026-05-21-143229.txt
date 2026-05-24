@@ -1,0 +1,457 @@
+===== DATE =====
+Do 21. Mai 14:32:29 CEST 2026
+
+===== HOST =====
+ Static hostname: sys0
+       Icon name: computer-desktop
+         Chassis: desktop
+      Machine ID: 8d1d725597c8512b1196c472690c7fe5
+         Boot ID: 4234bb86739c412493d083212b67e7e8
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 6.8.0-117-generic
+    Architecture: x86-64
+ Hardware Vendor: Dell Inc.
+  Hardware Model: Precision 7960 Tower
+
+===== KERNEL =====
+Linux sys0 6.8.0-117-generic #117~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu May  7 22:17:46 UTC  x86_64 x86_64 x86_64 GNU/Linux
+
+===== NVIDIA-SMI =====
+Thu May 21 14:32:31 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:16:00.0 Off |                  Off |
+| 36%   36C    P0             64W /  300W |       0MiB /  97887MiB |      2%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:AC:00.0 Off |                  Off |
+| 35%   38C    P0             63W /  300W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:CA:00.0 Off |                  Off |
+| 35%   39C    P0             67W /  300W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+===== DKMS STATUS =====
+nvidia/595.71.05, 6.8.0-117-generic, x86_64: installed
+
+===== LOADED NVIDIA MODULES =====
+nvidia_uvm           2060288  0
+nvidia              14798848  1 nvidia_uvm
+ecc                    45056  1 nvidia
+
+===== NVIDIA MODULE FILES =====
+/lib/modules/6.8.0-117-generic/updates/dkms/nvidia-peermem.ko
+/lib/modules/6.8.0-117-generic/updates/dkms/nvidia-uvm.ko
+/lib/modules/6.8.0-117-generic/updates/dkms/nvidia.ko
+/lib/modules/6.8.0-117-generic/updates/dkms/nvidia-drm.ko
+/lib/modules/6.8.0-117-generic/updates/dkms/nvidia-modeset.ko
+/lib/modules/6.8.0-117-generic/kernel/drivers/net/ethernet/nvidia/forcedeth.ko
+/lib/modules/6.8.0-117-generic/kernel/drivers/platform/x86/nvidia-wmi-ec-backlight.ko
+/lib/modules/6.8.0-117-generic/kernel/drivers/video/fbdev/nvidia/nvidiafb.ko
+
+===== MODINFO NVIDIA =====
+filename:       /lib/modules/6.8.0-117-generic/updates/dkms/nvidia.ko
+import_ns:      DMA_BUF
+alias:          char-major-195-*
+description:    NVIDIA core GPU kernel module
+version:        595.71.05
+supported:      external
+license:        Dual MIT/GPL
+firmware:       nvidia/595.71.05/gsp_tu10x.bin
+firmware:       nvidia/595.71.05/gsp_ga10x.bin
+softdep:        pre: ecdh_generic,ecdsa_generic
+srcversion:     9F2A41AD86A10E6F036471C
+alias:          of:N*T*Cnvidia,tegra264-displayC*
+alias:          of:N*T*Cnvidia,tegra264-display
+alias:          of:N*T*Cnvidia,tegra234-displayC*
+alias:          of:N*T*Cnvidia,tegra234-display
+alias:          pci:v000010DEd*sv*sd*bc06sc80i00*
+alias:          pci:v000010DEd*sv*sd*bc03sc02i00*
+alias:          pci:v000010DEd*sv*sd*bc03sc00i00*
+depends:        ecc
+retpoline:      Y
+name:           nvidia
+vermagic:       6.8.0-117-generic SMP preempt mod_unload modversions 
+sig_id:         PKCS#7
+signer:         ubuntu Secure Boot Module Signature key
+sig_key:        11:AB:7F:1F:58:BC:30:CD:44:38:5A:4F:CC:6F:BD:5C:AF:FA:1A:6D
+sig_hashalgo:   sha512
+signature:      5E:D1:95:84:60:A5:A8:86:78:BD:D4:94:6B:29:AC:D8:B2:06:7B:2A:
+		FD:AE:42:7D:20:A2:31:10:A0:B9:3B:12:8C:39:4F:BA:63:FD:42:AA:
+		26:69:7C:DE:36:C9:21:24:E3:22:70:C5:F1:DC:1C:51:C0:22:A2:C4:
+		14:FD:17:6E:79:8B:56:38:19:61:8C:51:BE:26:65:84:D1:85:81:D7:
+		B9:25:A1:2A:81:EA:49:ED:3C:B6:AB:99:19:4F:9C:D3:6D:DC:31:E8:
+		CC:C5:A1:72:13:D9:2C:F3:84:A8:01:1D:6B:01:64:8B:84:28:C6:FA:
+		34:DE:85:29:D9:3B:A9:A5:42:56:50:7D:E5:60:35:A5:C7:B1:DB:4F:
+		04:F8:87:28:D8:46:06:86:A3:30:18:A7:96:55:CC:2A:58:2A:B6:8C:
+		50:EA:C5:2B:F4:2D:4E:9E:3D:43:32:A0:8A:FC:FD:72:2D:84:6B:4D:
+		47:38:FD:CA:75:E8:9B:BB:17:A1:A4:1F:79:90:94:01:D0:1D:0F:04:
+		B5:2C:78:20:1A:4D:F0:48:12:DD:89:4B:59:C6:6F:AB:81:B3:21:1A:
+		E6:9B:4F:B0:EA:EC:0F:4C:12:DC:27:B0:E0:67:AA:6A:B7:CB:19:A2:
+		39:2C:79:F2:95:AA:40:F3:5C:C4:D0:94:D3:66:5F:DD
+parm:           NvSwitchRegDwords:NvSwitch regkey (charp)
+parm:           NvSwitchBlacklist:NvSwitchBlacklist=uuid[,uuid...] (charp)
+parm:           NVreg_ResmanDebugLevel:int
+parm:           NVreg_RmLogonRC:int
+parm:           NVreg_ModifyDeviceFiles:int
+parm:           NVreg_DeviceFileUID:int
+parm:           NVreg_DeviceFileGID:int
+parm:           NVreg_DeviceFileMode:int
+parm:           NVreg_InitializeSystemMemoryAllocations:int
+parm:           NVreg_UsePageAttributeTable:int
+parm:           NVreg_EnablePCIeGen3:int
+parm:           NVreg_EnableMSI:int
+parm:           NVreg_EnableStreamMemOPs:int
+parm:           NVreg_RestrictProfilingToAdminUsers:int
+parm:           NVreg_PreserveVideoMemoryAllocations:int
+parm:           NVreg_EnableS0ixPowerManagement:int
+parm:           NVreg_S0ixPowerManagementVideoMemoryThreshold:int
+parm:           NVreg_DynamicPowerManagement:int
+parm:           NVreg_DynamicPowerManagementVideoMemoryThreshold:int
+parm:           NVreg_EnableGpuFirmware:int
+parm:           NVreg_EnableGpuFirmwareLogs:int
+parm:           NVreg_OpenRmEnableUnsupportedGpus:int
+parm:           NVreg_EnableUserNUMAManagement:int
+parm:           NVreg_MemoryPoolSize:int
+parm:           NVreg_KMallocHeapMaxSize:int
+parm:           NVreg_VMallocHeapMaxSize:int
+parm:           NVreg_IgnoreMMIOCheck:int
+parm:           NVreg_NvLinkDisable:int
+parm:           NVreg_EnablePCIERelaxedOrderingMode:int
+parm:           NVreg_RegisterPCIDriver:int
+parm:           NVreg_RegisterPlatformDeviceDriver:int
+parm:           NVreg_EnableResizableBar:int
+parm:           NVreg_EnableDbgBreakpoint:int
+parm:           NVreg_TegraGpuPgMask:int
+parm:           NVreg_EnableNonblockingOpen:int
+parm:           NVreg_ExcludeAllGpus:int
+parm:           NVreg_GpuInitOnProbe:int
+parm:           NVreg_CoherentGPUMemoryMode:charp
+parm:           NVreg_RegistryDwords:charp
+parm:           NVreg_RegistryDwordsPerDevice:charp
+parm:           NVreg_RmMsg:charp
+parm:           NVreg_GpuBlacklist:charp
+parm:           NVreg_TemporaryFilePath:charp
+parm:           NVreg_ExcludedGpus:charp
+parm:           NVreg_DmaRemapPeerMmio:int
+parm:           NVreg_RmNvlinkBandwidth:charp
+parm:           NVreg_RmNvlinkBandwidthLinkCount:int
+parm:           NVreg_ImexChannelCount:int
+parm:           NVreg_CreateImexChannel0:int
+parm:           NVreg_GrdmaPciTopoCheckOverride:int
+parm:           NVreg_EnableSystemMemoryPools:int
+parm:           NVreg_UseKernelSuspendNotifiers:int
+parm:           rm_firmware_active:charp
+
+===== INSTALLED NVIDIA PACKAGES =====
+ii  libnvidia-cfg1:amd64                       595.71.05-1ubuntu1                               amd64        NVIDIA binary OpenGL/GLX configuration library
+ii  libnvidia-compute:amd64                    595.71.05-1ubuntu1                               amd64        NVIDIA libcompute package
+ii  libnvidia-container-tools                  1.19.0-1                                         amd64        NVIDIA container runtime library (command-line tools)
+ii  libnvidia-container1:amd64                 1.19.0-1                                         amd64        NVIDIA container runtime library
+ii  libnvidia-decode:amd64                     595.71.05-1ubuntu1                               amd64        NVIDIA Video Decoding runtime libraries
+ii  libnvidia-gpucomp:amd64                    595.71.05-1ubuntu1                               amd64        NVIDIA binary GPU compiler library
+ii  nvidia-container-toolkit                   1.19.0-1                                         amd64        NVIDIA Container toolkit
+ii  nvidia-container-toolkit-base              1.19.0-1                                         amd64        NVIDIA Container Toolkit Base
+ii  nvidia-dkms-open                           595.71.05-1ubuntu1                               amd64        NVIDIA DKMS package (open kernel module)
+ii  nvidia-firmware                            595.71.05-1ubuntu1                               amd64        Firmware files used by the kernel module
+ii  nvidia-kernel-common                       595.71.05-1ubuntu1                               amd64        Shared files used with the kernel module
+rc  nvidia-kernel-common-580                   580.142-0ubuntu0.22.04.1                         amd64        Shared files used with the kernel module
+ii  nvidia-kernel-source-open                  595.71.05-1ubuntu1                               amd64        NVIDIA kernel source package
+ii  nvidia-modprobe                            595.71.05-1ubuntu1                               amd64        Load the NVIDIA kernel driver and create device files
+ii  nvidia-persistenced                        595.71.05-1ubuntu1                               amd64        daemon to maintain persistent software state in the NVIDIA driver
+rc  nvidia-prime                               0.8.17.1                                         all          Tools to enable NVIDIA's Prime
+ii  nvidia-settings                            595.71.05-1ubuntu1                               amd64        Tool for configuring the NVIDIA graphics driver
+ii  screen-resolution-extra                    0.18.2ubuntu0.1                                  all          Extension for the nvidia-settings control panel
+
+===== APT POLICY =====
+nvidia-dkms-open:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+nvidia-firmware:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+nvidia-kernel-common:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+libnvidia-compute:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+libnvidia-cfg1:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+libnvidia-decode:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+libnvidia-gpucomp:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+nvidia-persistenced:
+  Installed: 595.71.05-1ubuntu1
+  Candidate: 595.71.05-1ubuntu1
+  Version table:
+ *** 595.71.05-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+        100 /var/lib/dpkg/status
+     595.58.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     595.45.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.48.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     590.44.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.159.04-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.159.03-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.126.20-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.126.16-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.126.09-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.105.08-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.95.05-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.82.07-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     580.65.06-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     575.57.08-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     575.57.08-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     570.211.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     570.195.03-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     570.172.08-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     570.158.01-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     570.148.08-1ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+     570.148.08-0ubuntu1 1001
+        600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  Packages
+
+===== PIN FILE =====
+Package: nvidia-dkms-open nvidia-firmware nvidia-kernel-common libnvidia-compute libnvidia-cfg1 libnvidia-decode libnvidia-gpucomp nvidia-persistenced
+Pin: origin developer.download.nvidia.com
+Pin-Priority: 1001
+
+===== PCI NVIDIA DEVICES =====
+0000:16:00.0 VGA compatible controller [0300]: NVIDIA Corporation Device [10de:2bb4] (rev a1)
+0000:16:00.1 Audio device [0403]: NVIDIA Corporation Device [10de:22e8] (rev a1)
+0000:ac:00.0 VGA compatible controller [0300]: NVIDIA Corporation Device [10de:2bb4] (rev a1)
+0000:ac:00.1 Audio device [0403]: NVIDIA Corporation Device [10de:22e8] (rev a1)
+0000:ca:00.0 VGA compatible controller [0300]: NVIDIA Corporation Device [10de:2bb4] (rev a1)
+0000:ca:00.1 Audio device [0403]: NVIDIA Corporation Device [10de:22e8] (rev a1)
+
+===== NVIDIA DEVICE NODES =====
+crw-rw-rw- 1 root root 195,   0 Mai 21 14:29 /dev/nvidia0
+crw-rw-rw- 1 root root 195,   1 Mai 21 14:29 /dev/nvidia1
+crw-rw-rw- 1 root root 195,   2 Mai 21 14:29 /dev/nvidia2
+crw-rw-rw- 1 root root 195, 255 Mai 21 14:29 /dev/nvidiactl
+crw-rw-rw- 1 root root 508,   0 Mai 21 14:29 /dev/nvidia-uvm
+crw-rw-rw- 1 root root 508,   1 Mai 21 14:29 /dev/nvidia-uvm-tools
+
+/dev/nvidia-caps:
+total 0
+cr-------- 1 root root 511, 1 Mai 21 14:29 nvidia-cap1
+cr--r--r-- 1 root root 511, 2 Mai 21 14:29 nvidia-cap2
+
+===== SYSTEMD NVIDIA SERVICES =====
+× nvidia-persistenced.service - NVIDIA Persistence Daemon
+     Loaded: loaded (/lib/systemd/system/nvidia-persistenced.service; enabled; vendor preset: enabled)
+     Active: failed (Result: exit-code) since Thu 2026-05-21 14:29:05 CEST; 3min 28s ago
+    Process: 20143 ExecStart=/usr/bin/nvidia-persistenced --user nvidia-persistenced (code=exited, status=1/FAILURE)
+    Process: 20147 ExecStopPost=/bin/rm -rf /var/run/nvidia-persistenced (code=exited, status=0/SUCCESS)
+        CPU: 12ms
+
+Mai 21 14:29:05 sys0 systemd[1]: Starting NVIDIA Persistence Daemon...
+Mai 21 14:29:05 sys0 nvidia-persistenced[20144]: Started (20144)
+Mai 21 14:29:05 sys0 nvidia-persistenced[20144]: Failed to query NVIDIA devices. Please ensure that the NVIDIA device files (/dev/nvidia*) exist, and that user 129 has read and write permissions for those files.
+Mai 21 14:29:05 sys0 nvidia-persistenced[20144]: Shutdown (20144)
+Mai 21 14:29:05 sys0 nvidia-persistenced[20143]: nvidia-persistenced failed to initialize. Check syslog for more details.
+Mai 21 14:29:05 sys0 systemd[1]: nvidia-persistenced.service: Control process exited, code=exited, status=1/FAILURE
+Mai 21 14:29:05 sys0 systemd[1]: nvidia-persistenced.service: Failed with result 'exit-code'.
+Mai 21 14:29:05 sys0 systemd[1]: Failed to start NVIDIA Persistence Daemon.
+
+===== NVIDIA JOURNAL THIS BOOT =====
+Mai 21 14:16:33 sys0 kernel: audit: type=1400 audit(1779365793.460:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1802 comm="apparmor_parser"
+Mai 21 14:16:33 sys0 kernel: audit: type=1400 audit(1779365793.460:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1802 comm="apparmor_parser"
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:15/0000:15:01.0/0000:16:00.1/sound/card1/input7
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:15/0000:15:01.0/0000:16:00.1/sound/card1/input8
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:ab/0000:ab:01.0/0000:ac:00.1/sound/card2/input11
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:ab/0000:ab:01.0/0000:ac:00.1/sound/card2/input12
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:ab/0000:ab:01.0/0000:ac:00.1/sound/card2/input13
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:c9/0000:c9:01.0/0000:ca:00.1/sound/card3/input15
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:c9/0000:c9:01.0/0000:ca:00.1/sound/card3/input16
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:15/0000:15:01.0/0000:16:00.1/sound/card1/input9
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:ab/0000:ab:01.0/0000:ac:00.1/sound/card2/input14
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:c9/0000:c9:01.0/0000:ca:00.1/sound/card3/input17
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:c9/0000:c9:01.0/0000:ca:00.1/sound/card3/input18
+Mai 21 14:16:33 sys0 kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:15/0000:15:01.0/0000:16:00.1/sound/card1/input10
+Mai 21 14:29:34 sys0 kernel: nvidia: loading out-of-tree module taints kernel.
+Mai 21 14:29:34 sys0 kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Mai 21 14:29:34 sys0 kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+Mai 21 14:29:34 sys0 kernel: nvidia 0000:16:00.0: enabling device (0142 -> 0143)
+Mai 21 14:29:34 sys0 kernel: nvidia 0000:16:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+Mai 21 14:29:34 sys0 kernel: nvidia 0000:ac:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+Mai 21 14:29:34 sys0 kernel: nvidia 0000:ca:00.0: enabling device (0140 -> 0143)
+Mai 21 14:29:34 sys0 kernel: nvidia 0000:ca:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+Mai 21 14:29:34 sys0 kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.71.05  Release Build  (dvs-builder@U22-I3-G08-03-1)  Fri Apr 24 06:42:30 UTC 2026
+
+===== SECURE BOOT =====
+SecureBoot disabled
+
+===== INITRAMFS NVIDIA CHECK =====
+usr/lib/modprobe.d/nvidia-graphics-drivers.conf
+usr/lib/modules/6.8.0-117-generic/kernel/drivers/hid/hid-nvidia-shield.ko
+usr/lib/modules/6.8.0-117-generic/kernel/drivers/i2c/busses/i2c-nvidia-gpu.ko
+usr/lib/modules/6.8.0-117-generic/kernel/drivers/net/ethernet/nvidia
+usr/lib/modules/6.8.0-117-generic/kernel/drivers/net/ethernet/nvidia/forcedeth.ko
+
+Package: nvidia-dkms-open nvidia-firmware nvidia-kernel-common libnvidia-compute libnvidia-cfg1 libnvidia-decode libnvidia-gpucomp nvidia-persistenced
+Pin: origin developer.download.nvidia.com
+Pin-Priority: 1001
+
+### nvidia-smi with 4 GPUs
+
+Information about PCI speed:
+*  GPU0 5@16x
+*  GPU1 4@16x
+*  GPU2 4@16x
+*  GPU3 5@16x
+
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:16:00.0 Off |                  Off |
+| 30%   29C    P8              7W /  300W |       2MiB /  97887MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:34:00.0 Off |                  Off |
+| 30%   30C    P8              5W /  300W |       2MiB /  97887MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:AC:00.0 Off |                  Off |
+| 30%   34C    P8             25W /  300W |       2MiB /  97887MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:CA:00.0 Off |                  Off |
+| 30%   31C    P8              7W /  300W |       2MiB /  97887MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
