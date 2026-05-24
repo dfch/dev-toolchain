@@ -98,7 +98,7 @@ Known separate issue:
 
 ## Missing 4th NVIDIA GPU
 
-We found the reason that the 4th NVIDIA GPU sometimes did not show: the power cable from the mainbaord to the card was defective.
+We found the reason that the 4th NVIDIA GPU sometimes did not show: the power cable from the mainboard to the card was defective.
 
 ## Power issue
 
